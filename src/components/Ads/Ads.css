@@ -1,4 +1,15 @@
 .Ads {
     background-color: white;
-  }
-  
+    padding: 1rem;
+}
+
+.Ads-avatar {
+  height: 7rem;
+  margin: 0 1rem 0 0;
+  float: left;
+  shape-outside: circle();
+  border-radius: 50%;
+}
+
+.Ads-body {
+}

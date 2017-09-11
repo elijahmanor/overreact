@@ -1,24 +1,44 @@
 .Toolbar {
-    position: relative;
-    background-color: white;
-  }
-  
-  .Toolbar:before,
-  .Toolbar:after {
-    content: "";
-    background-color: white;
-    position: absolute;
-    height: 100%;
-    display: block;
-    width: 100%;
-    top: 0;
-  }
-  
-  .Toolbar:before {
-    left: -100%;
-  }
-  
-  .Toolbar:after {
-    left: 100%;
-  }
-  
+  position: relative;
+  background-color: white;
+  list-style: none;
+  padding-left: 0;
+}
+
+.Toolbar-item {
+  float: left;
+  margin-right: 2rem;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  border-bottom: 3px solid transparent;
+  font-weight: bold;
+  color: var(--color-text-secondary); 
+}
+
+.Toolbar-item:hover {
+  border-bottom: 3px solid #307CB7;
+}
+
+.Toolbar-item.is-selected {
+  color: #307CB7;
+  border-bottom: 3px solid #307CB7;
+}
+
+.Toolbar:before,
+.Toolbar:after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  height: 100%;
+  display: block;
+  width: 100%;
+  top: 0;
+}
+
+.Toolbar:before {
+  left: -100%;
+}
+
+.Toolbar:after {
+  left: 100%;
+}

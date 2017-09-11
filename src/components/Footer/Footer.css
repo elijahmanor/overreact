@@ -1,4 +1,16 @@
 .Footer {
-    background-color: white;
-  }
-  
+  /* background-color: white; */
+}
+ 
+.Footer ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Footer li {
+  margin: 0.5rem;
+}

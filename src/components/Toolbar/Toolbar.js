@@ -6,10 +6,10 @@ import "./Toolbar.css";
 export default ({ className }) => {
   const classes = classNames("Toolbar", className);
   return (
-    <div className={classes}>
-      <div className="Toolbar-home">Home</div>
-      <div className="Toolbar-notifications">Notifications</div>
-      <div className="Toolbar-messages">Messages</div>
-    </div>
+    <ul className={classes}>
+      <li className="Toolbar-item is-selected">Home</li>
+      <li className="Toolbar-item">Notifications</li>
+      <li className="Toolbar-item">Messages</li>
+    </ul>
   );
 };

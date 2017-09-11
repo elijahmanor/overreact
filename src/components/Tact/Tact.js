@@ -14,8 +14,9 @@ export default ({ className, id, date, from, fullName, email, message }) => {
     <article className="Tact-body">
       <header className="Tact-header">
         <div className="Tact-fullName">{fullName}</div>
+        <span>&nbsp;</span>
         <div className="Tact-username">@{from}</div>
-        {" — "}
+        <span>&nbsp;—&nbsp;</span>
         <div className="Tact-date" title={format(new Date(date), "LLL")}>{formatDistanceStrict(new Date(date), new Date())}</div>
       </header>
       <div className="Tact-message">{message}</div>
