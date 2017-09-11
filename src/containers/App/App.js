@@ -30,6 +30,7 @@ export default class App extends Component {
         user = faker.helpers.contextualCard();
         const bio = faker.lorem.sentence();
         user.bio = bio;
+        email = user.email;
         this.setState({ user });
       }
     }
