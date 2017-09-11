@@ -1,0 +1,24 @@
+.Toolbar {
+    position: relative;
+    background-color: white;
+  }
+  
+  .Toolbar:before,
+  .Toolbar:after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    height: 100%;
+    display: block;
+    width: 100%;
+    top: 0;
+  }
+  
+  .Toolbar:before {
+    left: -100%;
+  }
+  
+  .Toolbar:after {
+    left: 100%;
+  }
+  

@@ -1,0 +1,41 @@
+.Profile {
+  background-color: var(--color-section-bg);
+    position: relative;
+}
+
+.Profile-background {
+  background-color: black;
+  height: 5rem;
+}
+
+.Profile-header {
+  display: flex;
+    padding: 1rem;
+}
+
+.Profile-avatar {
+  height: 7rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  margin-top: -3rem;
+  border: 0.3rem solid var(--color-section-bg);
+}
+
+.Profile-name {
+  width: 100%;
+}
+
+.Profile-fullName {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.Profile-userName {
+  color: var(--color-text-secondary);
+}
+
+.Profile-bio {
+    padding: 1rem;
+}
+  

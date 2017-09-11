@@ -1,0 +1,65 @@
+:root {
+  --color-body-bg: #e5ecf0;
+  --color-section-bg: white;
+  --color-divider: #ccc;
+  --color-text-primary: black;
+  --color-text-secondary: #999;
+}
+
+html,
+body {
+  background-color: var(--color-body-bg);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+}
+
+.App-toolbar {
+  grid-area: toolbar;
+}
+.App-profile {
+  grid-area: profile;
+}
+.App-list {
+  grid-area: list;
+}
+.App-details {
+  grid-area: details;
+}
+.App-ads {
+  grid-area: ads;
+}
+.App-footer {
+  grid-area: footer;
+}
+
+.App {
+  display: grid;
+  grid-template-areas: "toolbar" "list" "profile" "ads" "footer";
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  margin: 0 1rem;
+  max-width: 1000px;
+  font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 426px) {
+  .App {
+    grid-template-areas: "toolbar toolbar" "profile list" "ads     list"
+      "footer  list";
+    grid-template-columns: minmax(200px, 1fr) 2fr;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .App {
+    grid-template-areas: "toolbar toolbar toolbar" "profile list    ads"
+      "profile list    footer";
+    grid-template-columns: minmax(200px, 1fr) 2fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1001px) {
+  .App {
+    margin: auto;
+  }
+}
