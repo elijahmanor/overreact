@@ -8,17 +8,20 @@ import faker from "faker";
 import jsonp from "jsonp";
 import md5 from "md5";
 
+import "../../index.css";
 import "./App.css";
 
 export default class App extends Component {
   constructor() {
     super();
-    this.state = { user: {
-      thumbnailUrl: "",
-      name: { formatted: "" },
-      preferredUsername: "",
-      aboutMe: ""
-    } };
+    this.state = {
+      user: {
+        thumbnailUrl: "",
+        name: { formatted: "" },
+        preferredUsername: "",
+        aboutMe: ""
+      }
+    };
   }
   componentDidMount() {
     let user = {};
