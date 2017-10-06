@@ -7,6 +7,7 @@ import Footer from "../../components/Footer/Footer";
 import faker from "faker";
 import jsonp from "jsonp";
 import md5 from "md5";
+
 import "./App.css";
 
 export default class App extends Component {

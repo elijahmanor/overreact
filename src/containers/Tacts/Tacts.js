@@ -1,19 +1,29 @@
 import React from "react";
 import classNames from "classnames";
 import Tact from "../../components/Tact/Tact";
-import {subMinutes} from "date-fns";
+import { subMinutes } from "date-fns";
 
 import "./Tacts.css";
 
-const tactList = [
-  { id: "1", date: subMinutes(new Date(), 1), from: "dougneiner", fullName: "Doug Neiner", email: "doug@dougneiner.com", message: "Look at my woodworking video!" },
-  { id: "2", date: subMinutes(new Date(), 2), from: "ifandelse", fullName: "Jim Cowart", email: "jim@ifandelse.com", message: "Look at my hot calzone!" },
-  { id: "3", date: subMinutes(new Date(), 3), from: "robertreaves", fullName: "Robert Reaves", email: "robert.reaves@leankit.com", message: "Look at my long hair!" }
-];
+class Tacts extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { tacts: [] };
+  }
 
-export default ({ className }) => {
-  const classes = classNames("Tacts", className);
-  return <div className={classes}>
-    { tactList.map( tact => <Tact key={ tact.id } { ...tact } /> ) }
-  </div>;
+  componentDidMount() {
+    fetch("http://localhost:3001/tacts")
+      .then(response => response.json())
+      .then(tacts => this.setState({ tacts }));
+  }
+
+  render() {
+    const classes = classNames("Tacts", this.props.className);
+
+    return <div className={classes}>
+      {this.state.tacts.map(tact => <Tact key={tact.id} { ...tact } />)}
+    </div>;
+  }
 };
+
+export default Tacts;
