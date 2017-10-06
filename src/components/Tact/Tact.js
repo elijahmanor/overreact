@@ -1,15 +1,15 @@
 import React from "react";
 import md5 from "md5";
-import { format, formatDistance, formatDistanceStrict } from "date-fns";
+import { format, formatDistanceStrict } from "date-fns";
 import PropTypes from "prop-types";
 
 import "./Tact.css";
 
-const Tact = ({ date, from, fullName, avatar, email, message }) => {
+const Tact = ({ date, userName, fullName, avatar, email, message }) => {
   const url = avatar || `https://www.gravatar.com/avatar/${md5(email)}`;
 
   return <div className="Tact">
-    <img className="Tact-avatar" src={url} />
+    <img className="Tact-avatar" alt={`${fullName}'s Avatar`} src={url} />
     <article className="Tact-body">
       <header className="Tact-header">
         <div className="Tact-fullName">{fullName}</div>
@@ -24,7 +24,7 @@ const Tact = ({ date, from, fullName, avatar, email, message }) => {
 };
 
 Tact.propTypes = {
-  date: PropTypes.instanceOf(Date).isRequired,
+  date: PropTypes.string.isRequired,
   userName: PropTypes.string.isRequired,
   fullName: PropTypes.string.isRequired,
   avatar: PropTypes.string,

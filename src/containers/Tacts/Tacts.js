@@ -1,7 +1,6 @@
 import React from "react";
 import classNames from "classnames";
 import Tact from "../../components/Tact/Tact";
-import { subMinutes } from "date-fns";
 
 import "./Tacts.css";
 
