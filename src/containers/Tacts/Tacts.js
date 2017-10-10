@@ -11,9 +11,15 @@ class Tacts extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:3001/tacts")
+    fetch("http://localhost:3001/tacts?_sort=date&_order=desc")
       .then(response => response.json())
-      .then(tacts => this.setState({ tacts }));
+      .then(tacts => {
+        tacts = tacts.map(tact => {
+          tact.date = new Date(tact.date);
+          return tact;
+        });
+        this.setState({ tacts })
+      });
   }
 
   render() {

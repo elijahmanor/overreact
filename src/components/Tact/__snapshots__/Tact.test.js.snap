@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tact renders with an avatar 1`] = `
+<div
+  className="Tact"
+>
+  <img
+    alt="John Smith's Avatar"
+    className="Tact-avatar"
+    src="http://avatar.com/me.png"
+  />
+  <article
+    className="Tact-body"
+  >
+    <header
+      className="Tact-header"
+    >
+      <div
+        className="Tact-fullName"
+      >
+        John Smith
+      </div>
+      <span>
+         
+      </span>
+      <div
+        className="Tact-userName"
+      >
+        @
+        johnsmith
+      </div>
+      <span>
+         — 
+      </span>
+      <div
+        className="Tact-date"
+        title="October 10 2017 9:58 a.m."
+      >
+        0 seconds
+      </div>
+    </header>
+    <div
+      className="Tact-message"
+    >
+      Hello World!
+    </div>
+    <div
+      className="TactActions"
+    >
+      <button
+        className="TactActions-action"
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-comment-o"
+        />
+      </button>
+      <button
+        className="TactActions-action"
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-heart-o"
+        />
+      </button>
+      <button
+        className="TactActions-action is-active"
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-heart"
+        />
+      </button>
+    </div>
+  </article>
+</div>
+`;
+
+exports[`Tact renders with an email 1`] = `
+<div
+  className="Tact"
+>
+  <img
+    alt="John Smith's Avatar"
+    className="Tact-avatar"
+    src="http://avatar.com/me.png"
+  />
+  <article
+    className="Tact-body"
+  >
+    <header
+      className="Tact-header"
+    >
+      <div
+        className="Tact-fullName"
+      >
+        John Smith
+      </div>
+      <span>
+         
+      </span>
+      <div
+        className="Tact-userName"
+      >
+        @
+        johnsmith
+      </div>
+      <span>
+         — 
+      </span>
+      <div
+        className="Tact-date"
+        title="October 10 2017 9:58 a.m."
+      >
+        0 seconds
+      </div>
+    </header>
+    <div
+      className="Tact-message"
+    >
+      Hello World!
+    </div>
+    <div
+      className="TactActions"
+    >
+      <button
+        className="TactActions-action"
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-comment-o"
+        />
+      </button>
+      <button
+        className="TactActions-action"
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-heart-o"
+        />
+      </button>
+      <button
+        className="TactActions-action is-active"
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-heart"
+        />
+      </button>
+    </div>
+  </article>
+</div>
+`;
