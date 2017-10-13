@@ -1,50 +1,48 @@
-.Tact {
+.Fuse {
   /* margin: 0.5rem; */
   background-color: var(--color-section-bg);
   border-bottom: 1px solid var(--color-divider);
   display: flex;
 }
 
-.Tact-avatar {
+.Fuse-avatar {
   border-radius: 50%;
   height: 5rem;
   margin: 1rem;
 }
 
-.Tact-body {
+.Fuse-body {
   width: 100%;
   margin: 1rem 1rem 1rem 0;
 }
 
-.Tact-header {
+.Fuse-header {
   display: flex;
   color: var(--color-text-secondary);
 }
 
-.Tact-fullName {
+.Fuse-fullName {
   color: var(--color-text-primary);
   font-weight: bold;
 }
 
-.Tact-userName {
+.Fuse-userName {
 }
 
-.Tact-message {
+.Fuse-message {
   margin-bottom: 0.5rem;
 }
 
-.Tact-date {
+.Fuse-date {
 }
 
-.Tact-comment {
-
+.Fuse-comment {
 }
 
-.Tact-actions {
-  
+.Fuse-actions {
 }
 
-.TactActions-action {
+.FuseActions-action {
   background: none;
   color: inherit;
   border: none;
@@ -55,7 +53,6 @@
   margin-right: 1rem;
 }
 
-.TactActions-action.is-active .fa-heart {
-  color: red;
+.FuseActions-action .fa.is-active {
+  color: #ed1b2e;
 }
-  

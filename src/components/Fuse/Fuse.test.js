@@ -2,14 +2,19 @@ import React from "react";
 import { shallow, mount } from "enzyme";
 import ReactDOM from "react-dom";
 import renderer from "react-test-renderer";
-import Tact from "./Tact";
+import Fuse from "./Fuse";
 
-describe("Tact", () => {
+describe("Fuse", () => {
+  beforeEach(() => {
+    const NOW = new Date("2017-10-10T00:00:00");
+    global.Date = jest.fn(() => NOW);
+  });
+
   it("renders with an avatar", () => {
     const tree = renderer.create(
-      <Tact
+      <Fuse
         id={1}
-        date={new Date()}
+        date={new Date("2017-10-10T10:10:10")}
         userName="johnsmith"
         fullName="John Smith"
         avatar="http://avatar.com/me.png"
@@ -22,9 +27,9 @@ describe("Tact", () => {
 
   it("renders with an email", () => {
     const tree = renderer.create(
-      <Tact
+      <Fuse
         id={1}
-        date={new Date()}
+        date={new Date("2017-10-10T10:10:10")}
         userName="johnsmith"
         fullName="John Smith"
         avatar="http://avatar.com/me.png"

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FuseActions renders favorited 1`] = `
+<div
+  className="FuseActions"
+>
+  <button
+    className="FuseActions-action"
+    onClick={[Function]}
+  >
+    <i
+      aria-hidden="true"
+      className="fa fa-comment-o"
+    />
+  </button>
+  <button
+    className="FuseActions-action is-active"
+  >
+    <i
+      aria-hidden="true"
+      className="fa fa-heart is-active"
+    />
+  </button>
+</div>
+`;
+
+exports[`FuseActions renders unfavorited 1`] = `
+<div
+  className="FuseActions"
+>
+  <button
+    className="FuseActions-action"
+    onClick={[Function]}
+  >
+    <i
+      aria-hidden="true"
+      className="fa fa-comment-o"
+    />
+  </button>
+  <button
+    className="FuseActions-action is-active"
+  >
+    <i
+      aria-hidden="true"
+      className="fa fa-heart-o"
+    />
+  </button>
+</div>
+`;

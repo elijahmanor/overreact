@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Toolbar from "../../components/Toolbar/Toolbar";
 import Profile from "../../components/Profile/Profile";
-import Tacts from "../Tacts/Tacts";
+import Fuses from "../Fuses/Fuses";
 import Ads from "../../components/Ads/Ads";
 import Footer from "../../components/Footer/Footer";
 import faker from "faker";
@@ -54,7 +54,7 @@ export default class App extends Component {
       <div className="App">
         <Toolbar className="App-toolbar" />
         <Profile className="App-profile" user={user} />
-        <Tacts className="App-list" />
+        <Fuses className="App-list" />
         <Ads className="App-ads" />
         <Footer className="App-footer" />
       </div>

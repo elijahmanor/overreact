@@ -1,22 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tact renders with an avatar 1`] = `
+exports[`Fuse renders with an avatar 1`] = `
 <div
-  className="Tact"
+  className="Fuse"
 >
   <img
     alt="John Smith's Avatar"
-    className="Tact-avatar"
+    className="Fuse-avatar"
     src="http://avatar.com/me.png"
   />
   <article
-    className="Tact-body"
+    className="Fuse-body"
   >
     <header
-      className="Tact-header"
+      className="Fuse-header"
     >
       <div
-        className="Tact-fullName"
+        className="Fuse-fullName"
       >
         John Smith
       </div>
@@ -24,7 +24,7 @@ exports[`Tact renders with an avatar 1`] = `
          
       </span>
       <div
-        className="Tact-userName"
+        className="Fuse-userName"
       >
         @
         johnsmith
@@ -33,22 +33,23 @@ exports[`Tact renders with an avatar 1`] = `
          — 
       </span>
       <div
-        className="Tact-date"
-        title="October 10 2017 9:58 a.m."
+        className="Fuse-date"
+        title="October 9 2017 7:00 p.m."
       >
         0 seconds
       </div>
     </header>
     <div
-      className="Tact-message"
+      className="Fuse-message"
     >
       Hello World!
     </div>
     <div
-      className="TactActions"
+      className="FuseActions"
     >
       <button
-        className="TactActions-action"
+        className="FuseActions-action"
+        onClick={[Function]}
       >
         <i
           aria-hidden="true"
@@ -56,19 +57,11 @@ exports[`Tact renders with an avatar 1`] = `
         />
       </button>
       <button
-        className="TactActions-action"
+        className="FuseActions-action is-active"
       >
         <i
           aria-hidden="true"
           className="fa fa-heart-o"
-        />
-      </button>
-      <button
-        className="TactActions-action is-active"
-      >
-        <i
-          aria-hidden="true"
-          className="fa fa-heart"
         />
       </button>
     </div>
@@ -76,23 +69,23 @@ exports[`Tact renders with an avatar 1`] = `
 </div>
 `;
 
-exports[`Tact renders with an email 1`] = `
+exports[`Fuse renders with an email 1`] = `
 <div
-  className="Tact"
+  className="Fuse"
 >
   <img
     alt="John Smith's Avatar"
-    className="Tact-avatar"
+    className="Fuse-avatar"
     src="http://avatar.com/me.png"
   />
   <article
-    className="Tact-body"
+    className="Fuse-body"
   >
     <header
-      className="Tact-header"
+      className="Fuse-header"
     >
       <div
-        className="Tact-fullName"
+        className="Fuse-fullName"
       >
         John Smith
       </div>
@@ -100,7 +93,7 @@ exports[`Tact renders with an email 1`] = `
          
       </span>
       <div
-        className="Tact-userName"
+        className="Fuse-userName"
       >
         @
         johnsmith
@@ -109,22 +102,23 @@ exports[`Tact renders with an email 1`] = `
          — 
       </span>
       <div
-        className="Tact-date"
-        title="October 10 2017 9:58 a.m."
+        className="Fuse-date"
+        title="October 9 2017 2:00 p.m."
       >
         0 seconds
       </div>
     </header>
     <div
-      className="Tact-message"
+      className="Fuse-message"
     >
       Hello World!
     </div>
     <div
-      className="TactActions"
+      className="FuseActions"
     >
       <button
-        className="TactActions-action"
+        className="FuseActions-action"
+        onClick={[Function]}
       >
         <i
           aria-hidden="true"
@@ -132,19 +126,11 @@ exports[`Tact renders with an email 1`] = `
         />
       </button>
       <button
-        className="TactActions-action"
+        className="FuseActions-action is-active"
       >
         <i
           aria-hidden="true"
           className="fa fa-heart-o"
-        />
-      </button>
-      <button
-        className="TactActions-action is-active"
-      >
-        <i
-          aria-hidden="true"
-          className="fa fa-heart"
         />
       </button>
     </div>
