@@ -1,6 +1,6 @@
 .Profile {
   background-color: var(--color-section-bg);
-    position: relative;
+  position: relative;
 }
 
 .Profile-background {
@@ -10,7 +10,7 @@
 
 .Profile-header {
   display: flex;
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .Profile-avatar {
@@ -36,6 +36,5 @@
 }
 
 .Profile-bio {
-    padding: 1rem;
+  padding: 1rem;
 }
-  

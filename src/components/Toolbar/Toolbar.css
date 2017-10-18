@@ -7,21 +7,30 @@
 
 .Toolbar-item {
   float: left;
-  margin-right: 2rem;
+  margin: 1rem 2rem 0 0;
   padding: 1rem 0;
   font-size: 1.4rem;
   border-bottom: 3px solid transparent;
   font-weight: bold;
-  color: var(--color-text-secondary); 
+  color: var(--color-text-secondary);
 }
 
 .Toolbar-item:hover {
-  border-bottom: 3px solid #307CB7;
+  border-bottom: 3px solid #307cb7;
 }
 
 .Toolbar-item.is-selected {
-  color: #307CB7;
-  border-bottom: 3px solid #307CB7;
+  color: #307cb7;
+  border-bottom: 3px solid #307cb7;
+}
+
+.Toolbar-item.Toolbar-item--right {
+  float: right;
+  margin: 0;
+}
+
+.Toolbar-item.Toolbar-item--right:hover {
+  border-bottom: 3px solid transparent;
 }
 
 .Toolbar:before,

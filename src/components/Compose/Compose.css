@@ -1,0 +1,73 @@
+.Compose-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgb(204, 204, 204);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  min-height: 15em;
+  width: 40em;
+  background-color: var(--color-body-bg);
+}
+
+.Compose-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.Compose-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  border: 0;
+  padding: 0;
+  margin: 1rem;
+}
+
+.Compose-header {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 1rem;
+  background-color: var(--color-section-bg);
+}
+
+.Compose-header h3 {
+  margin: 0;
+}
+
+.Compose-main {
+  padding: 1rem;
+}
+
+.Compose-text {
+  border: 1px solid #ccc;
+  height: 8.25em;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.Compose-text:focus {
+  outline: none;
+  border: 1px solid #111;
+}
+
+.Compose-validation {
+  margin-right: 1rem;
+  font-size: 1.25rem;
+}
+
+.Compose-actions {
+  padding: 0 1rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

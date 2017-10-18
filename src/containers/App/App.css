@@ -26,12 +26,7 @@ body {
 
 .App {
   display: grid;
-  grid-template-areas:
-    "toolbar"
-    "list"
-    "profile"
-    "ads"
-    "footer";
+  grid-template-areas: "toolbar" "list" "profile" "ads" "footer";
   grid-template-columns: 1fr;
   grid-gap: 10px;
   margin: 0 1rem;
@@ -41,23 +36,15 @@ body {
 
 @media only screen and (min-width: 426px) {
   .App {
-    grid-template-areas:
-      "toolbar toolbar"
-      "profile list"
-      "ads     list"
-      "footer  list";
+    grid-template-areas: "toolbar toolbar" "profile list" "ads     list" "footer  list";
     grid-template-columns: minmax(200px, 1fr) 2fr;
   }
 }
 
 @media only screen and (min-width: 769px) {
   .App {
-    grid-template-areas:
-      "toolbar toolbar toolbar"
-      "profile list    ads"
-      "profile list    footer"
-      ".       list    ."
-      ".       list    .";
+    grid-template-areas: "toolbar toolbar toolbar" "profile list    ads" "profile list    footer"
+      ".       list    ." ".       list    .";
     grid-template-columns: minmax(200px, 1fr) 2fr 1fr;
   }
 }

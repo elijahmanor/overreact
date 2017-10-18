@@ -12,7 +12,7 @@ module.exports = function() {
         userName: faker.name.firstName().toLowerCase() + faker.name.lastName().toLowerCase(),
         email: faker.internet.email(),
         message: faker.random.words(faker.random.number({ min: 5, max: 20 })),
-        favorite: false
+        bomb: false
       };
     })
   };

@@ -23,8 +23,8 @@ stories.addWithJSX("with Avatar", () => (
     userName={text("userName", "elijahmanor")}
     fullName={text("fullName", "Elijah Manor")}
     message={text("message", "Hello, World!")}
-    favorite={boolean("favorite", false)}
-    onFavorite={action("onFavorite")}
+    bomb={boolean("bomb", false)}
+    onBomb={action("onBomb")}
     avatar={text("avatar", "https://s3.amazonaws.com/uifaces/faces/twitter/ripplemdk/128.jpg")}
   />
 ));
@@ -36,7 +36,8 @@ stories.addWithJSX("with Email", () => (
     userName={text("userName", "elijahmanor")}
     fullName={text("fullName", "Elijah Manor")}
     message={text("message", "Hello, World!")}
-    favorite={boolean("favorite", true)}
+    bomb={boolean("bomb", true)}
+    onBomb={action("onBomb")}
     email={text("email", "elijah.manor@gmail.com")}
   />
 ));

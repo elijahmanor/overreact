@@ -6,7 +6,7 @@ import FuseActions from "./FuseActions";
 
 import "./Fuse.css";
 
-const Fuse = ({ id, date, userName, fullName, avatar, email, message, favorite, onFavorite }) => {
+const Fuse = ({ id, date, userName, fullName, avatar, email, message, bomb, onBomb }) => {
   const url = avatar || `https://www.gravatar.com/avatar/${md5(email)}`;
 
   return (
@@ -23,7 +23,7 @@ const Fuse = ({ id, date, userName, fullName, avatar, email, message, favorite, 
           </div>
         </header>
         <div className="Fuse-message">{message}</div>
-        <FuseActions id={id} userName={userName} favorite={favorite} onFavorite={onFavorite} />
+        <FuseActions id={id} userName={userName} bomb={bomb} onBomb={onBomb} />
       </article>
     </div>
   );
@@ -37,11 +37,12 @@ Fuse.propTypes = {
   avatar: PropTypes.string,
   email: PropTypes.string,
   message: PropTypes.string.isRequired,
-  favorite: PropTypes.bool.isRequired
+  bomb: PropTypes.bool.isRequired,
+  onBomb: PropTypes.func.isRequired
 };
 
 React.defaultProps = {
-  onFavorite: () => {}
+  onBomb: () => {}
 };
 
 export default Fuse;

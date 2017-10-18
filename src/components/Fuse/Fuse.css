@@ -7,8 +7,10 @@
 
 .Fuse-avatar {
   border-radius: 50%;
-  height: 5rem;
+  height: 4em;
+  width: 4em;
   margin: 1rem;
+  max-width: 100%;
 }
 
 .Fuse-body {
