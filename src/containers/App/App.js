@@ -23,6 +23,16 @@ const getUserInfo = WrappedComponent => {
   };
 };
 
+class UserInfo extends Component {
+  state = { user: {} };
+  componentDidMount() {
+    getUser().then(user => this.setState({ user }));
+  }
+  render() {
+    return this.props.children(this.state.user);
+  }
+}
+
 const WrappedProfile = getUserInfo(Profile);
 
 export default class App extends Component {
@@ -55,10 +65,11 @@ export default class App extends Component {
   };
   render() {
     const { user, fuses, showModal } = this.state;
+    // <WrappedProfile className="App-profile" />
     return (
       <div className="App">
         <Toolbar className="App-toolbar" onNew={this.handleNew} />
-        <WrappedProfile className="App-profile" />
+        <UserInfo>{user => <Profile className="App-profile" user={user} />}</UserInfo>
         <Fuses className="App-list" fuses={fuses} onBomb={this.handleBomb} />
         <Ads className="App-ads" />
         <Footer className="App-footer" />
